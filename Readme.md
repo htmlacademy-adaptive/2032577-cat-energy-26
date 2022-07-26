@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Иваненко](https://up.htmlacademy.ru/adaptive/26/user/2032577).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/profession/frontender/14/adaptive/26/user/215761).
 
 ---
 
