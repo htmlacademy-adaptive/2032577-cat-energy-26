@@ -24,11 +24,11 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toogle" type='button'><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href='index.html'>Главная</a></li>
-            <li class="site-list__item"><a href='catalog.html'>Каталог продукции</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="site-list__item site-list__item--active"><a >Подбор программы</a></li>
           </ul>
         </div>
@@ -38,31 +38,31 @@
         <div class="main-container__wrapper">
           <h1 class="main-container__title">Подбор программы</h1>
           <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class='main-container__form form' action="#">
+          <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__cat-info cat-info">
               <label class="form__item cat-info__item">
                 <span class="cat-info__text">Имя:*</span>
-                <input type="text" class="cat-info__form cat-info__form--name" placeholder='Барсик'>
+                <input type="text" class="cat-info__form cat-info__form--name" name="name" placeholder="Барсик">
               </label>
               <label class="form__item cat-info__item">
                 <span class="cat-info__text">Вес (кг):*</span>
-                <input type="number" class="cat-info__form cat-info__form--weight" placeholder='7'>
+                <input type="number" class="cat-info__form cat-info__form--weight" name="weight" placeholder="7">
               </label>
               <label class="form__item cat-info__item">
                 <span class="cat-info__text">Возраст (лет):</span>
-                <input type="number" class="cat-info__form cat-info__form--age" placeholder='7'>
+                <input type="number" class="cat-info__form cat-info__form--age" name="age" placeholder="7">
               </label>
               <div class="cat-info__item type-programs cat-info__item--programs">
                 <label class="type-programs__item">
-                  <input class="type-programs__radio" type="radio" name="program" value='lose-weight'>
+                  <input class="type-programs__radio" type="radio" name="program" value="lose-weight">
                   <span class="type-programs__text">Похудение</span>
                 </label>
                 <label class="type-programs__item">
-                  <input class="type-programs__radio" type="radio" name="program" value='gain-weight'>
+                  <input class="type-programs__radio" type="radio" name="program" value="gain-weight">
                   <span class="type-programs__text">Набор массы</span>
                 </label>
                 <label class="type-programs__item">
-                  <input class="type-programs__radio" type="radio" name="program" value='not-know'>
+                  <input class="type-programs__radio" type="radio" name="program" value="not-know">
                   <span class="type-programs__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
@@ -71,11 +71,11 @@
               <h2 class="owner__title">Контактные данные (владельца кота)</h2>
               <label class="form__item owner__item">
                 <span class="owner__text">E-mail:*</span>
-                <input type="text" class="owner__form owner__form--email" placeholder='kuklachev@gmail.com'>
+                <input type="email" class="owner__form owner__form--email" name="email" placeholder="kuklachev@gmail.com">
               </label>
               <label class="form__item owner__item">
                 <span class="owner__text">Телефон:*</span>
-                <input type="text" class="owner__form owner__form--phone" placeholder='Барсик'>
+                <input type="tel" class="owner__form owner__form--phone" name="telephone" placeholder="8 (960) 900-60-90">
               </label>
             </div>
             <div class="form__comment comment">
@@ -86,24 +86,24 @@
               <h2 class="option__title">Дополнительно</h2>
               <div class="option__list">
                 <label class="option__checkbox">
-                  <input type="checkbox" name="option" class="option__item">
+                  <input type="checkbox" name="option" class="option__item" value="non-sugar">
                   <span class="option__description">Сахарозаменитель</span>
                 </label>
                 <label class="option__checkbox">
-                  <input type="checkbox" name="option" class="option__item">
+                  <input type="checkbox" name="option" class="option__item" value="water">
                   <span class="option__description">Питьевая вода</span>
                 </label>
                 <label class="option__checkbox">
-                  <input type="checkbox" name="option" class="option__item">
+                  <input type="checkbox" name="option" class="option__item" value="milk">
                   <span class="option__description">Молоко</span>
                 </label>
                 <label class="option__checkbox">
-                  <input type="checkbox" name="option" class="option__item">
+                  <input type="checkbox" name="option" class="option__item" value="vitamins">
                   <span class="option__description">Витамины</span>
                 </label>
               </div>
             </div>
-            <button class="form__button button">Отправить заявку</button>
+            <button type="submit" class="form__button button">Отправить заявку</button>
           </form>
         </div>
       </main>
@@ -142,7 +142,7 @@
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <a href="" class="copyright__link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <span class="copyright__text">HTML Academy</span>
               <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 50 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
             </a>
