@@ -1,0 +1,25 @@
+@import "colors";
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  margin: 0;
+}
+
+.site-list__item {
+  margin: 0;
+  padding: 22px 0;
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-bottom: none;
+  text-align: center;
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $main-font;
+}

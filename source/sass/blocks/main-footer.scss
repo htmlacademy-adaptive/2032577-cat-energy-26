@@ -1,0 +1,23 @@
+@import "colors";
+
+.main-footer__logo {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.main-footer__logo-image {
+  width: 128px;
+  margin: 39px 96px;
+}
+
+.main-footer__contacts-wrapper {
+  background-color: $secondary-bg;
+}
+
+.main-footer__social {
+  margin: 0 20px;
+}
+
+.main-footer__copyright {
+  margin: 0 20px;
+}

@@ -1,0 +1,11 @@
+@import "colors";
+
+.button {
+  color: $main-bg;
+  background-color: $content-bg;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  padding: 7px 44px;
+}
