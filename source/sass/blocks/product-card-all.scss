@@ -1,0 +1,31 @@
+@import "colors";
+
+.product-card-all__title {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  display: block;
+  margin-top: 53px;
+  text-align: center;
+}
+
+.product-card-all__description {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $long-text;
+  text-align: center;
+  display: block;
+  margin: 9px 0 21px;
+}
+
+.product-card-all__button {
+  background-color: $secondary-bg;
+  color: $long-text;
+}

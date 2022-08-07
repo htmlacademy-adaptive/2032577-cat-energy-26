@@ -2,10 +2,13 @@
 
 .address {
   line-height: 0;
+  &--second-bg {
+    background-color: $secondary-bg;
+  }
 }
 
 .address__wrapper {
-  margin: 26px 20px;
+  padding: 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;

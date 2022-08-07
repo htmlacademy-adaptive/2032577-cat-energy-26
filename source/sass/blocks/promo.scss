@@ -2,10 +2,14 @@
 
 .promo {
   font-family: Oswald;
-  background-image: url(../../img/background/main-cat.jpg);
+  background-image: url(../img/background/main-cat.jpg);
   background-repeat: no-repeat;
   background-color: $main-bg;
   color: $main-bg;
+}
+
+.promo__wrapper {
+  margin: 0 20px;
 }
 
 .promo__title {
@@ -28,7 +32,7 @@
     display: block;
     width: 280px;
     height: 270px;
-    background-image: url(../../img/main-product.png);
+    background-image: url(../img/main-product.png);
     background-repeat: no-repeat;
     z-index: 2;
     margin: 29px auto 3px;

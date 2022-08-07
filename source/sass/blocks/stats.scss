@@ -1,0 +1,18 @@
+@import "colors";
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Arial, sans-serif;
+  gap: 2px 0;
+}
+
+.stats__item-value {
+  text-align: end;
+  margin: 0;
+}
+

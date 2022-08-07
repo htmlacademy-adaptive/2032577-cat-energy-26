@@ -1,0 +1,72 @@
+@import "colors";
+
+.form__fieldset {
+  padding: 0;
+  border: none;
+  display: block;
+  margin: 0;
+}
+
+.form__field {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__label {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $long-text;
+  margin-right: 13px;
+  display: block;
+  min-width: fit-content;
+}
+
+.form__control {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $long-text;
+  padding: 13px 15px;
+  border: 1px solid #E7E7E7;
+  flex-grow: 1;
+  box-sizing: border-box;
+  &--textarea {
+    min-width: 100%;
+  }
+}
+
+.form__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $main-font;
+}
+
+.form__radio {
+  margin-right: 15px;
+}
+
+.form__checkbox {
+  margin-right: 18px;
+}
+
+.form__text {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+  margin-bottom: 32px;
+}
+
+.form__button {
+  margin: 34px auto 21px;
+  display: block;
+}
