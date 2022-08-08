@@ -1,5 +1,3 @@
-@import "colors";
-
 .product-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,7 +28,7 @@
 }
 
 .product-card__title {
-  font-family: 'Oswald';
+  font-family: Oswald, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

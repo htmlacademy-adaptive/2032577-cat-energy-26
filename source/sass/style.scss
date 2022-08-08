@@ -1,4 +1,6 @@
 // Начните писать стили здесь
+@use "./colors.scss";
+@use "./fonts.scss";
 @use "./blocks/add-item.scss";
 @use "./blocks/additional.scss";
 @use "./blocks/address.scss";
@@ -23,6 +25,4 @@
 @use "./blocks/social.scss";
 @use "./blocks/stats.scss";
 @use "./blocks/vissually-hidden.scss";
-@use "./blocks/colors.scss";
-@use "./blocks/fonts.scss";
 @use "./blocks/program.scss";
