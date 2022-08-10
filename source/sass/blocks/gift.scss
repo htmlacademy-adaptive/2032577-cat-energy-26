@@ -1,6 +1,6 @@
 .gift {
   padding: 58px 61px 43px 58px;
-  background-image: url(../img/background/gift-cat.jpg);
+  background-image: url("../img/background/gift-cat.jpg");
   text-align: center;
   box-sizing: border-box;
   line-height: 0;
@@ -12,7 +12,7 @@
 
 .gift__description {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
