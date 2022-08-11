@@ -1,0 +1,37 @@
+.address {
+  line-height: 0;
+
+  &--second-bg {
+    background-color: $secondary-bg;
+  }
+}
+
+.address__wrapper {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.address__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-font;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.address__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $long-text;
+}
+
+.address__map {
+  display: inline-block;
+  line-height: 0;
+}

@@ -1,0 +1,25 @@
+.instruction {
+  width: 320px;
+}
+
+.instruction__wrapper {
+  margin: 0 20px;
+}
+
+.instruction__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $main-font;
+}
+
+.instruction__list {
+  list-style: none;
+  padding: 0;
+  margin: 42px auto 49px 80px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $long-text;
+}
