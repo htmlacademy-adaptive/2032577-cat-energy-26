@@ -27,7 +27,6 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 32px;
-  text-transform: uppercase;
 }
 
 .example__stat-container {
@@ -42,6 +41,7 @@
   color: $main-font;
   width: 124px;
   margin-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .example__stat-description {
