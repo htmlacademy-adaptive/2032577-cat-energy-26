@@ -14,3 +14,15 @@
   line-height: 18px;
   width: 320px;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1320px;
+  }
+}

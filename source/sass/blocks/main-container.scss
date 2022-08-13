@@ -28,3 +28,23 @@
 .main-container__gift {
   margin: 35px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    width: 768px;
+  }
+
+  .main-container__wrapper {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    width: 1320px;
+  }
+
+  .main-container__wrapper {
+    margin: 0 50px;
+  }
+}
