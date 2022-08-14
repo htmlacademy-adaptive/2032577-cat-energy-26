@@ -13,3 +13,21 @@
 .programs__item {
   margin: 20px auto;
 }
+
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 768px;
+  }
+  .programs__list {
+    padding: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1320px;
+  }
+  .programs__list {
+    padding: 50px;
+  }
+}
