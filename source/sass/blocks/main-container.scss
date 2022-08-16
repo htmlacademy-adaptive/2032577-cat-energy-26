@@ -39,12 +39,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .main-container {
-    width: 1320px;
+    width: 1440px;
   }
 
-  .main-container__wrapper {
-    margin: 0 50px;
+  .main-container {
+    margin: 0 110px;
   }
 }

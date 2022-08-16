@@ -15,3 +15,12 @@
 .social__link {
   display: inline-block;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+}
