@@ -3,7 +3,7 @@
 }
 
 .instruction__wrapper {
-  margin: 0 20px;
+  margin: 20px 20px 49px;
 }
 
 .instruction__title {
@@ -12,12 +12,14 @@
   font-size: 36px;
   line-height: 40px;
   color: $main-font;
+  margin: 0;
 }
 
 .instruction__list {
   list-style: none;
   padding: 0;
-  margin: 42px auto 49px;
+  margin: 0;
+  margin-top: 42px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -50,7 +52,7 @@
   }
 
   .instruction__wrapper {
-    margin: 0 30px;
+    margin: 45px 30px 47px;
   }
 
   .instruction__title {
@@ -58,7 +60,7 @@
     line-height: 60px;
   }
   .instruction__list {
-    margin: 72px auto 47px;
+    margin: 32px 0 0;
     font-size: 16px;
     line-height: 24px;
     display: flex;
@@ -85,6 +87,9 @@
       left: 118px;
       top: 0;
     }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
   .instruction__item-icon {
     width: 80px;
@@ -100,11 +105,11 @@
 
 @media (min-width: $desktop-width) {
   .instruction {
-    width: 1224px;
+    width: 1440px;
   }
 
   .instruction__wrapper {
-    margin: 0;
+    margin: 71px 110px 69px;
   }
 }
 
