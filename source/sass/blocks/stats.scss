@@ -1,7 +1,7 @@
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -9,7 +9,42 @@
   gap: 2px 0;
 }
 
+.stats__item-title {
+  color: $long-text;
+}
+
 .stats__item-value {
   text-align: end;
   margin: 0;
+  color: $long-text;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__item-title {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    &:last-of-type {
+      padding-top: 7px;
+    }
+  }
+
+  .stats__item-value {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    &:last-of-type {
+      padding-top: 7px;
+    }
+  }
 }

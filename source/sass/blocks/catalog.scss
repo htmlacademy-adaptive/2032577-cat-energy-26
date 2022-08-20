@@ -5,3 +5,13 @@
   padding: 0;
   gap: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    gap: 60px;
+  }
+}
