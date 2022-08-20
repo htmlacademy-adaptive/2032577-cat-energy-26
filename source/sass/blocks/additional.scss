@@ -1,6 +1,5 @@
-.additional {
+.additional__wrapper {
   padding: 0 20px;
-
 }
 
 .additional__title {
@@ -17,4 +16,39 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__wrapper {
+    padding: 0 30px;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    position: relative;
+    padding-left: 36px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+      left: -30px;
+      top: 24px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 328px;
+      height: 2px;
+      background-color: #68b738;
+      left: 410px;
+      top: 24px;
+    }
+  }
 }

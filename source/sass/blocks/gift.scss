@@ -23,3 +23,33 @@
   line-height: 20px;
   color: $main-bg;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding: 0 30px;
+  }
+
+  .gift__wrapper {
+    padding: 57px 124px 61px 77px;
+    background-image: url("../img/background/gift-cat-tablet.jpg");
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gift__icon {
+    margin-bottom: 0;
+    margin-right: 265px;
+    display: block;
+    width: 80px;
+    height: 82px;
+  }
+
+  .gift__description {
+    width: 161px;
+    text-align: left;
+  }
+}
