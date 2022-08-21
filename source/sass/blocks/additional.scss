@@ -52,3 +52,36 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional {
+    display: inline-block;
+  }
+
+  .additional__wrapper {
+    padding: 0 0 0 110px;
+    margin-bottom: 86px;
+  }
+
+  .additional__title {
+    padding-left: 0;
+    margin-bottom: 81px;
+    margin-top: 76px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 957px;
+      left: 373px;
+    }
+  }
+
+  .additional__list {
+    display: inline-grid;
+    width: 896px;
+    margin: 0;
+  }
+}

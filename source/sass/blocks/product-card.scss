@@ -122,3 +122,47 @@
     grid-column: 1/2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    padding: 0 40px 0 36px;
+    position: relative;
+    border: none;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 245px;
+      height: 431px;
+      left: 0px;
+      bottom: 0px;
+      background-color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+
+  .product-card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 40px;
+    padding-bottom: 39px;
+  }
+
+  .product-card__image {
+    width: 161px;
+    height: 172px;
+    display: block;
+    margin: 28px auto 0;
+
+    &--big {
+      width: 172px;
+      height: 202px;
+      margin-top: 1px;
+    }
+  }
+
+  .product-card__title {
+    line-height: 21px;
+  }
+}

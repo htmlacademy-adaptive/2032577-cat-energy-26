@@ -53,3 +53,32 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift {
+    padding: 0;
+  }
+
+  .gift__wrapper {
+    padding: 56px 43px 42px 41px;
+    background-image: url("../img/background/gift-cat.jpg");
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .gift__icon {
+    margin: 0 auto;
+    display: block;
+    width: 80px;
+    height: 82px;
+  }
+
+  .gift__description {
+    width: 161px;
+    text-align: center;
+    margin-top: 46px;
+  }
+}

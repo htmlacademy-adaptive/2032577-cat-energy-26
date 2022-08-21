@@ -49,4 +49,21 @@
   .main-container {
     width: 1440px;
   }
+
+  .main-container__catalog {
+    margin: 0 110px;
+  }
+
+  .main-container__title {
+    margin: 74px 110px 84px;
+  }
+
+  .main-container__gift {
+    display: block;
+    margin: 191px 0 0 79px;
+  }
+
+  .main-container__support-wrapper {
+    display: flex;
+  }
 }

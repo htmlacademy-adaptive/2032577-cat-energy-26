@@ -48,7 +48,6 @@
     grid-template-columns: auto auto 93px;
     gap: 25px 0;
     padding: 26px 38px 28px;
-    border-bottom: 1px solid #cdcdcd;
     border:  1px solid #cdcdcd;
 
     &:not(:last-child) {
@@ -79,5 +78,33 @@
 
   .add-item__button {
     grid-column: 1/4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-item {
+    grid-template-columns: 324px 244px 82px 244px;
+    gap: 0;
+    padding: 14px 0 16px;
+    border:  none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .add-item__button {
+    grid-column: 4/5;
+  }
+
+  .add-item__description {
+    text-align: left;
+  }
+
+  .add-item__price {
+    text-align: left;
   }
 }
