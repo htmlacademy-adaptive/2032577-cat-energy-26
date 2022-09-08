@@ -1,9 +1,5 @@
 .programs {
-  width: 320px;
-}
-
-.programs__wrapper {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .programs__list {
@@ -19,21 +15,3 @@
   margin: 20px auto;
 }
 
-@media (min-width: $tablet-width) {
-  .programs {
-    width: 768px;
-  }
-
-  .programs__wrapper {
-    margin: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programs {
-    width: 1440px;
-  }
-  .programs__wrapper {
-    margin: 82px 110px 71px;
-  }
-}

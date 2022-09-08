@@ -1,9 +1,5 @@
 .instruction {
-  width: 320px;
-}
-
-.instruction__wrapper {
-  margin: 20px 20px 49px;
+  margin-bottom: 49px;
 }
 
 .instruction__title {
@@ -47,14 +43,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .instruction {
-    width: 768px;
-  }
-
-  .instruction__wrapper {
-    margin: 45px 30px 47px;
-  }
-
   .instruction__title {
     font-size: 60px;
     line-height: 60px;
@@ -100,16 +88,6 @@
   .instruction__description {
     max-width: 100%;
     margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .instruction {
-    width: 1440px;
-  }
-
-  .instruction__wrapper {
-    margin: 71px 110px 69px;
   }
 }
 

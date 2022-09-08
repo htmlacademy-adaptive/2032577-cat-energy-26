@@ -8,23 +8,20 @@
   color: $main-font;
   display: flex;
   justify-content: space-between;
-  width: 320px;
   flex-wrap: wrap;
 
 }
 
 .main-header__wrapper {
-  margin: 0 20px;
-  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 17px;
 }
 
 .main-header__logo {
   width: 34px;
   height: 38px;
+  margin: 10px 0 17px;
   background-image: url("../img/logo-mobile.svg");
   &--add {
     background-image: url("../img/logo-text.svg");
@@ -62,18 +59,18 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    width: 768px;
     background-color: transparent;
   }
+
   .main-header__wrapper {
-    margin: 0 30px;
-    width: 174px;
-    padding: 24px 0;
+    width: 224px;
   }
+
   .main-header__logo {
     width: 174px;
     height: 52px;
     background-image: url("../img/logo-tablet.svg");
+    margin: 24px 0 2px;
     &--add {
       display: none;
     }
@@ -88,14 +85,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
-    width: 1440px;
-  }
-  .main-header__wrapper {
-    margin: 0 110px;
-    width: 202px;
-    padding: 53px 0 0;
-  }
   .main-header__logo {
     width: 202px;
     height: 59px;

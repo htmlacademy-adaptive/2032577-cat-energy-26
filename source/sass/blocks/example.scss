@@ -1,12 +1,6 @@
 .example {
-  width: 320px;
   background-color: $secondary-bg;
   display: block;
-}
-
-.example__wrapper {
-  margin: 25px 20px 40px;
-  display: inline-block;
 }
 
 .example__title {
@@ -16,6 +10,7 @@
   line-height: 40px;
   display: inline-block;
   margin: 0;
+  margin-top: 25px;
 }
 
 .example__description {
@@ -82,15 +77,17 @@
   margin-left: 5px;
 }
 
+.example__image {
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
-    width: 768px;
     background-color: $main-bg;
     border-top: 1px solid #E6E6E6;
     background-color: transparent;
   }
   .example__wrapper {
-    margin: 43px 30px 0;
     padding-bottom: 100px;
     position: relative;
     &::after {
@@ -163,13 +160,11 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: 1440px;
     border-top: none;
     background-color: transparent;
   }
 
   .example__wrapper {
-    margin: 69px 110px 0;
     padding-bottom: 75px;
     position: relative;
     display: grid;

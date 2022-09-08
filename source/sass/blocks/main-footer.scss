@@ -1,23 +1,16 @@
 .main-footer__logo {
-  display: inline-block;
-  box-sizing: border-box;
+  line-height: 0;
+  display: block;
 }
 
 .main-footer__logo-image {
   width: 128px;
-  margin: 39px 96px;
+  height: 24px;
+  margin: 39px 76px 32px;
 }
 
-.main-footer__contacts-wrapper {
+.main-footer__contacts {
   background-color: $secondary-bg;
-}
-
-.main-footer__social {
-  margin: 0 20px;
-}
-
-.main-footer__copyright {
-  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {

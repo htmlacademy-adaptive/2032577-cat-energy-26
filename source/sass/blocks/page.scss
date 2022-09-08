@@ -12,17 +12,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  width: 320px;
+  width: auto;
 }
 
-@media (min-width: $tablet-width) {
-  .page__body {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    width: 1440px;
-  }
-}

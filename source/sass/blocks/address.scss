@@ -7,7 +7,7 @@
 }
 
 .address__wrapper {
-  padding: 26px 20px;
+  padding: 26px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
@@ -29,6 +29,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $long-text;
+  margin-left: auto;
 }
 
 .address__map {
@@ -37,7 +38,8 @@
   height: 362px;
   background-image: url("../img/location.jpg");
   line-height: 0;
-  background-size: contain;
+  background-size: cover;
+  background-position: 50%;
 }
 
 @media (min-width: $tablet-width) {
