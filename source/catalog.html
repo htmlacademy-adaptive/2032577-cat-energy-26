@@ -10,6 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__container container">
     <div class="main-header__wrapper container">
       <a class="main-header__logo main-header__logo" href="index.html"></a>
       <a class="main-header__logo main-header__logo--add" href="index.html"></a>
@@ -17,17 +18,20 @@
     </div>
       <nav class="main-header__nav main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active site-list__item--active-main"><a class="site-list__link site-list__link--main-page">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--main-page" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--main-page" href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active site-list__item--active-main"><a class="site-list__link site-list__link--main-page" href="catalog.html">Каталог продукции</a></li>
             <li class="site-list__item site-list__item--last"><a class="site-list__link site-list__link--main-page" href="form.html">Подбор программы</a></li>
           </ul>
       </nav>
+    </div>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title">Каталог продукции</h1>
+    <div class="main-container__title-container">
+    <h1 class="main-container__title container">Каталог продукции</h1>
+    </div>
     <ul class="main-container__catalog catalog catalog--mobile">
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image" src="./img/catalog/catalog-1.png" alt="Курица 500г." width="68"
               height="86">
@@ -47,7 +51,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image product-card__image--big" src="./img/catalog/catalog-2.png"
               alt="Курица 1000г." width="68" height="86">
@@ -67,7 +71,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image" src="./img/catalog/catalog-3.png" alt="Курица 500г." width="68"
               height="86">
@@ -87,7 +91,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image product-card__image--big" src="./img/catalog/catalog-4.png"
               alt="Курица 500г." width="68" height="86">
@@ -107,7 +111,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image" src="./img/catalog/catalog-5.png" alt="Курица 500г." width="68"
               height="86">
@@ -127,7 +131,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image product-card__image--big" src="./img/catalog/catalog-6.png"
               alt="Курица 500г." width="68" height="86">
@@ -147,7 +151,7 @@
         </div>
       </li>
       <li class="catalog__product-card product-card product-card--mobile">
-        <div class="product-card__wrapper">
+        <div class="product-card__wrapper container">
           <a href="#" class="product-card__link-image">
             <img class="product-card__image" src="./img/catalog/catalog-7.png" alt="Курица 500г." width="68"
               height="86">
@@ -167,7 +171,7 @@
         </div>
       </li>
       <li class="catalog__product-card-all product-card-all">
-        <div class="product-card-all__wrapper">
+        <div class="product-card-all__wrapper container">
           <svg class="product-card-all__image" width="30" height="30" viewBox="0 0 30 30" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
@@ -178,7 +182,7 @@
         </div>
       </li>
     </ul>
-    <div class="main-container__support-wrapper">
+    <div class="main-container__support-wrapper container">
     <div class="main-container__additional additional">
       <div class="additional__wrapper">
       <h2 class="additional__title">Дополнительные товары</h2>
@@ -233,7 +237,7 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__address address">
+      <div class="main-footer__address address address--second-bg">
         <div class="address__wrapper container">
           <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="address__text">ул. Большая
@@ -246,6 +250,7 @@
         </a>
       </div>
       <div class="main-footer__contacts">
+        <div class="main-footer__contacts-container">
         <a href="index.html" class="main-footer__logo container">
           <img src="./img/logo-text.svg" alt="Логтип Cat Energy" class="main-footer__logo-image">
         </a>
@@ -293,6 +298,7 @@
           </a>
         </div>
       </div>
+    </div>
     </div>
   </footer>
 </body>

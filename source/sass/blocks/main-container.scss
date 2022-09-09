@@ -1,13 +1,16 @@
+.main-container__title-container {
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}
+
 .main-container__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $main-font;
-  margin: 0;
-  padding: 27px 20px 41px;
-  border-bottom: 1px solid #ebebeb;
-  border-top: 1px solid #ebebeb;
+  padding-top: 27px;
+  padding-bottom: 41px;
   &--form {
     border-bottom: none;
     padding-bottom: 0;
@@ -31,6 +34,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .main-container__title-container {
+    border: none;
+  }
+
   .main-container__wrapper {
     &--form {
       padding: 0 40px 0 37px;
@@ -40,9 +47,7 @@
   .main-container__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 41px 30px 82px;
-    border: none;
-    padding: 0;
+    margin: 64px auto 82px;
     &--form {
       margin-bottom: 54px;
     }
@@ -53,10 +58,6 @@
     line-height: 30px;
     margin: 0 30px 66px;
     max-width: 323px;
-  }
-
-  .main-container__catalog {
-    margin: 0 30px;
   }
 }
 

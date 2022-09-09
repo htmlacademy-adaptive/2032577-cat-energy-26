@@ -7,7 +7,8 @@
 }
 
 .address__wrapper {
-  padding: 26px 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
@@ -83,7 +84,8 @@
     gap: 87px;
     position: absolute;
     top: 95px;
-    left: 110px;
+    right: 53%;
+    width: 565px;
     background-color: $main-bg;
   }
 
