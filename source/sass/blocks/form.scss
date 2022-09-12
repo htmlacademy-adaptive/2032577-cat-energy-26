@@ -1,8 +1,8 @@
 .form__fieldset {
-  padding: 0 20px;
+  padding: 0;
   border: none;
   display: block;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 1px solid #d9d9d9;
   position: relative;
   &--cat-info {
@@ -59,8 +59,10 @@
   box-sizing: border-box;
 
   &--textarea {
-    min-width: 100%;
     resize: none;
+    display: block;
+    width: 280px;
+    padding-right: 12px;
   }
 }
 
@@ -75,29 +77,33 @@
     margin-bottom: 35px;
   }
   &--comment {
-    margin: 23px 0 38px;
+    margin-top: 23px;
+    margin-bottom: 38px;
   }
   &--add {
-    margin: 23px 0 34px;
+    margin-top: 23px;
+    margin-bottom: 34px;
   }
   &::after {
     content: "";
     display: block;
     position: absolute;
     height: 2px;
-    right: 0px;
     top: 40px;
     background-color: #68B738;
   }
   &--owner::after {
-    width: 99px;
+    width: 100%;
     top: 44px;
+    left: 62%;
   }
   &--comment::after {
-    width: 158px;
+    width: 100%;
+    left: 50%;
   }
   &--add::after {
-    width: 136px;
+    width: 100%;
+    left: 55%;
   }
 }
 
@@ -129,24 +135,33 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset {
-    padding: 0 30px;
+    padding: 0 70px;
+    margin: 0 auto;
     border-bottom: none;
+    display: block;
+    width: 628px;
+    box-sizing: border-box;
     &--cat-info {
       padding-bottom: 72px;
     }
     &--programs {
       padding: 25px 0 25px 28px;
-      margin: 0 30px;
       border: 1px solid #e7e7e7;
+      box-sizing: border-box;
     }
   }
 
-  .form-wrapper {
+  .form__wrapper {
     &--add {
-    width: 565px;
-    gap: 0 123px;
+    width: 631px;
+    gap: 0 61px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 70px;
+    padding: 0;
+    }
+    &--owner {
+      padding: 0 70px;
     }
   }
 
@@ -156,6 +171,12 @@
   }
 
   .form__field {
+    padding: 0;
+    margin: 0;
+    max-width: 628px;
+    &--programs {
+      width: auto;
+    }
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -164,6 +185,7 @@
   .form__title {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 70px;
     &--owner {
       margin-top: 71px;
       margin-bottom: 76px;
@@ -179,8 +201,8 @@
       display: block;
       position: absolute;
       height: 2px;
-      width: 30px;
-      left: -40px;
+      width: 100%;
+      right: 808px;
       top: 89px;
       background-color: #68B738;
     }
@@ -189,13 +211,14 @@
       display: block;
       position: absolute;
       height: 2px;
-      right: -20px;
       top: 89px;
       background-color: #68B738;
     }
     &--owner::after {
-      width: 145px;
+      width: 100%;
       top: 95px;
+      left: 700px;
+      overflow-x: hidden;
     }
     &--comment::after {
       width: 478px;
@@ -206,8 +229,8 @@
   }
 
   .form__button-wrapper {
-    width: 565px;
-    padding: 0 40px 0 37px;
+    width: 631px;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 61px;
@@ -230,6 +253,10 @@
   .form__control {
     font-size: 20px;
     line-height: 30px;
+
+    &--textarea {
+      width: 631px;
+    }
   }
 }
 
@@ -238,11 +265,13 @@
     padding: 0;
     &--cat-info {
       padding-bottom: 0;
+      width: 569px;
     }
     &--programs {
       padding: 25px 0 25px 28px;
       margin: 0;
       border: 1px solid #e7e7e7;
+      width: 568px;
     }
   }
 
@@ -251,29 +280,38 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 80px;
+      margin: 0 auto;
+      padding: 0 110px;
+      width: 1220px;
     }
 
     &--owner {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 78px;
+      padding: 0 110px;
     }
 
     &--add {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 0 104px;
+      padding: 0 110px;
+      margin: 0;
+      width: 100%;
     }
   }
 
   .form__title {
+    padding: 0 110px;
+
     &::before {
       content: "";
       display: block;
       position: absolute;
       height: 2px;
-      width: 70px;
-      left: -110px;
+      width: 100%;
+      right: 1370px;
       top: 89px;
       background-color: #68B738;
     }
@@ -282,20 +320,22 @@
       display: block;
       position: absolute;
       height: 2px;
-      right: -110px;
       top: 93px;
       background-color: #68B738;
     }
     &--owner::after {
-      width: 778px;
+      width: 100%;
       top: 93px;
+      left: 652px;
     }
     &--comment::after {
-      width: 1108px;
+      width: 100%;
+      left: 320px;
     }
     &--add::after {
-      width: 1078px;
+      width: 100%;
       top: 91px;
+      left: 350px;
     }
   }
 
@@ -306,7 +346,8 @@
     box-sizing: border-box;
 
     &--textarea {
-      min-width: 100%;
+      width: 1220px;
+      height: 174px;
       resize: none;
     }
   }
@@ -317,6 +358,7 @@
     }
 
     &--cat-info {
+      width: 569px;
       &:not(:last-child) {
         margin-bottom: 13px;
       }
@@ -335,6 +377,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 81px;
+    margin: 0 auto;
+    padding: 0 110px;
+    width: 1220px;
+    box-sizing: content-box;
   }
 
   .form__button {
