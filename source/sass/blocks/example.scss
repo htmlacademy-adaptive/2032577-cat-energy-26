@@ -1,11 +1,6 @@
 .example {
-  width: 320px;
   background-color: $secondary-bg;
   display: block;
-}
-
-.example__wrapper {
-  margin: 25px 20px 0;
 }
 
 .example__title {
@@ -14,6 +9,8 @@
   font-size: 36px;
   line-height: 40px;
   display: inline-block;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .example__description {
@@ -21,16 +18,23 @@
   font-size: 14px;
   line-height: 18px;
   color: $long-text;
+  margin: 40px 0 20px;
 }
 
 .example__stats {
   display: grid;
   grid-template-columns: 124px 124px;
-  gap: 32px;
+  grid-template-rows: auto auto;
+  gap: 20px 32px;
+  margin-bottom: 20px;
 }
 
 .example__stat-container {
   text-align: center;
+  background-image: url("../img/border-stat-small.svg");
+  width: 124px;
+  height: 70px;
+  background-repeat: no-repeat;
 }
 
 .example__stat {
@@ -39,9 +43,9 @@
   font-size: 24px;
   line-height: 24px;
   color: $main-font;
-  width: 124px;
   margin-bottom: 7px;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .example__stat-description {
@@ -50,7 +54,9 @@
   font-size: 12px;
   line-height: 12px;
   color: $long-text;
-  width: 124px;
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .example__cost {
@@ -61,5 +67,165 @@
   color: $main-font;
   text-align: center;
   text-transform: uppercase;
-  margin: 20px 0 40px;
+  margin: 0;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+}
+
+.example__stat-description-cost {
+  margin-left: 5px;
+}
+
+.example__image {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $main-bg;
+    border-top: 1px solid #E6E6E6;
+    background-color: transparent;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #eaeaea;
+      width: 100%;
+      height: 462px;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+  .example__wrapper {
+    padding-bottom: 100px;
+  }
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 63px 0 54px;
+    max-width: 700px;
+  }
+  .example__stats {
+    display: inline-grid;
+    grid-template-columns: 162px 162px auto;
+    gap: 42px;
+    margin: 0;
+  }
+  .example__stat-container {
+    text-align: center;
+    background-image: url("../img/border-stat-big.svg");
+    width: 162px;
+    height: 77px;
+    background-repeat: no-repeat;
+  }
+  .example__stat {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+    margin-top: 15px;
+  }
+  .example__stat-description {
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 11px 0 0 125px;
+    display: inline-block;
+    grid-column: 3/4;
+    text-align: right;
+  }
+  .example__stat-description-cost {
+    margin-left: 0;
+    margin-top: 9px;
+  }
+  .example__image {
+    width: 560px;
+    height: 512px;
+    margin: 99px auto 0;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    border-top: none;
+    background-color: transparent;
+  }
+
+  .example__wrapper {
+    padding-bottom: 75px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 129px 309px 152px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #eaeaea;
+      width: 1440px;
+      height: 462px;
+      bottom: 0;
+      left: -110px;
+      z-index: -1;
+    }
+  }
+
+  .example__description {
+    margin-top: 146px;
+    max-width: 435px;
+    grid-column: 1/2;
+    height: fit-content;
+  }
+
+  .example__stats {
+    grid-column: 1/2;
+    display: inline-grid;
+    grid-template-columns: 162px 162px;
+    gap: 55px 42px;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .example__stat-description-cost {
+    margin-left: 0;
+    margin-top: 0;
+    margin-left: 63px;
+  }
+
+  .example__image {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 242px;
+    margin-top: 70px;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .example__title {
+    margin-top: 69px;
+  }
 }

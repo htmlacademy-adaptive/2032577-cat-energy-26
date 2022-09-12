@@ -1,5 +1,5 @@
 .programs {
-  width: 320px;
+  margin-bottom: 20px;
 }
 
 .programs__list {
@@ -7,9 +7,16 @@
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
-  padding: 20px;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .programs__item {
   margin: 20px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 0;
+  }
 }

@@ -2,6 +2,24 @@
   display: grid;
   grid-template-columns: 1fr;
   list-style: none;
-  padding: 0;
   gap: 19px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 62px 80px;
+  }
 }

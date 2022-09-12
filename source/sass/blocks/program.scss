@@ -1,6 +1,15 @@
 .program {
   max-width: 100%;
   background-color: $secondary-bg;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  &:not(:last-child) {
+    margin: 0 0 20px;
+  }
+  padding: 21px 20px 18px 22px;
 }
 
 .program__title {
@@ -9,8 +18,31 @@
   line-height: 37px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  margin: 30px auto 29px 91px;
   display: inline-block;
+  margin: 0;
+  margin-left: 69px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &--lose-weight::before {
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/program-lose-weight.svg");
+  }
+
+  &--take-weight::before {
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/program-take-weight.svg");
+  }
 }
 
 .program__description {
@@ -18,10 +50,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $long-text;
-  margin: 0 20px 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
+  margin: 22px 0 15px;
 }
 
 .program__link {
@@ -32,6 +64,111 @@
   text-transform: uppercase;
   color: $main-font;
   text-decoration: none;
-  margin: 15px auto 18px 19px;
   display: inline-block;
+}
+
+.program__link-text {
+  margin-right: 15px;
+}
+
+@media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  .program {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 372px;
+    width: 708px;
+    padding: 77px 28px 53px 53px;
+    box-sizing: border-box;
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+
+    &--lose-weight::before {
+      top: 81px;
+      left: 446px;
+      width: 200px;
+      height: 211px;
+      background-image: url("../img/program-lose-weight.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--take-weight::before {
+      top: 91px;
+      left: 412px;
+      width: 268px;
+      height: 200px;
+      background-image: url("../img/program-take-weight.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    border-bottom: none;
+    box-sizing: border-box;
+    max-width: 340px;
+    margin: 24px 0 48px;
+  }
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+    height: 374px;
+    padding: 77px 51px 55px 52px;
+    box-sizing: border-box;
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 162px;
+
+    &--lose-weight::before {
+      top: 41px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      background-image: url("../img/program-lose-weight.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--take-weight::before {
+      top: 47px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+      background-image: url("../img/program-take-weight.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    box-sizing: border-box;
+    margin: 39px 0 23px;
+  }
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

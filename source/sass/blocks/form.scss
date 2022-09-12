@@ -2,7 +2,19 @@
   padding: 0;
   border: none;
   display: block;
-  margin: 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+  &--cat-info {
+    padding-bottom: 26px;
+  }
+  &--programs {
+    padding-top: 22px;
+    padding-bottom: 19px;
+  }
+  &--owner, &--comment, &--add {
+    border-bottom: none;
+  }
 }
 
 .form__field {
@@ -47,7 +59,10 @@
   box-sizing: border-box;
 
   &--textarea {
-    min-width: 100%;
+    resize: none;
+    display: block;
+    width: 280px;
+    padding-right: 12px;
   }
 }
 
@@ -57,6 +72,39 @@
   font-size: 24px;
   line-height: 26px;
   color: $main-font;
+  &--owner {
+    margin-top: 26px;
+    margin-bottom: 35px;
+  }
+  &--comment {
+    margin-top: 23px;
+    margin-bottom: 38px;
+  }
+  &--add {
+    margin-top: 23px;
+    margin-bottom: 34px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    top: 40px;
+    background-color: #68B738;
+  }
+  &--owner::after {
+    width: 100%;
+    top: 44px;
+    left: 62%;
+  }
+  &--comment::after {
+    width: 100%;
+    left: 50%;
+  }
+  &--add::after {
+    width: 100%;
+    left: 55%;
+  }
 }
 
 .form__radio {
@@ -67,6 +115,10 @@
   margin-right: 18px;
 }
 
+.form__button-wrapper {
+  padding: 0 20px;
+}
+
 .form__text {
   display: block;
   margin: 0 auto;
@@ -75,6 +127,273 @@
 }
 
 .form__button {
-  margin: 34px auto 21px;
+  margin: 34px 0 21px;
   display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    padding: 0 70px;
+    margin: 0 auto;
+    border-bottom: none;
+    display: block;
+    width: 628px;
+    box-sizing: border-box;
+    &--cat-info {
+      padding-bottom: 72px;
+    }
+    &--programs {
+      padding: 25px 0 25px 28px;
+      border: 1px solid #e7e7e7;
+      box-sizing: border-box;
+    }
+  }
+
+  .form__wrapper {
+    &--add {
+    width: 631px;
+    gap: 0 61px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 70px;
+    padding: 0;
+    }
+    &--owner {
+      padding: 0 70px;
+    }
+  }
+
+  .form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__field {
+    padding: 0;
+    margin: 0;
+    max-width: 628px;
+    &--programs {
+      width: auto;
+    }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 70px;
+    &--owner {
+      margin-top: 71px;
+      margin-bottom: 76px;
+    }
+    &--comment {
+      margin: 65px 0 76px;
+    }
+    &--add {
+      margin: 65px 0 57px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      right: 808px;
+      top: 89px;
+      background-color: #68B738;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      top: 89px;
+      background-color: #68B738;
+    }
+    &--owner::after {
+      width: 100%;
+      top: 95px;
+      left: 700px;
+      overflow-x: hidden;
+    }
+    &--comment::after {
+      width: 478px;
+    }
+    &--add::after {
+      width: 446px;
+    }
+  }
+
+  .form__button-wrapper {
+    width: 631px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 61px;
+  }
+
+  .form__button {
+    margin: 54px 0 72px;
+    width: 192px;
+    padding: 13px 45px;
+    box-sizing: content-box;
+  }
+
+  .form__text {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    margin-top: 69px;
+  }
+
+  .form__control {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--textarea {
+      width: 631px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    padding: 0;
+    &--cat-info {
+      padding-bottom: 0;
+      width: 569px;
+    }
+    &--programs {
+      padding: 25px 0 25px 28px;
+      margin: 0;
+      border: 1px solid #e7e7e7;
+      width: 568px;
+    }
+  }
+
+  .form__wrapper {
+    &--desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 80px;
+      margin: 0 auto;
+      padding: 0 110px;
+      width: 1220px;
+    }
+
+    &--owner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 78px;
+      padding: 0 110px;
+    }
+
+    &--add {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0 104px;
+      padding: 0 110px;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .form__title {
+    padding: 0 110px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      right: 1370px;
+      top: 89px;
+      background-color: #68B738;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      top: 93px;
+      background-color: #68B738;
+    }
+    &--owner::after {
+      width: 100%;
+      top: 93px;
+      left: 652px;
+    }
+    &--comment::after {
+      width: 100%;
+      left: 320px;
+    }
+    &--add::after {
+      width: 100%;
+      top: 91px;
+      left: 350px;
+    }
+  }
+
+  .form__control {
+    padding: 10px 19px;
+    border: 1px solid #e7e7e7;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    &--textarea {
+      width: 1220px;
+      height: 174px;
+      resize: none;
+    }
+  }
+
+  .form__field {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    &--cat-info {
+      width: 569px;
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    }
+
+    &--programs {
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  .form__button-wrapper {
+    width: auto;
+    padding: 00;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 81px;
+    margin: 0 auto;
+    padding: 0 110px;
+    width: 1220px;
+    box-sizing: content-box;
+  }
+
+  .form__button {
+    margin: 61px 0 82px;
+    width: auto;
+    padding: 13px 188px;
+    box-sizing: content-box;
+  }
+
+  .form__text {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    margin-top: 69px;
+  }
 }

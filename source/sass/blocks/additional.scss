@@ -13,3 +13,71 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+
+@media (min-width: $tablet-width) {
+  .additional__wrapper {
+    padding: 0 30px;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    position: relative;
+    padding-left: 36px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      right: 648px;
+      top: 24px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10%;
+      height: 2px;
+      background-color: #68b738;
+      left: 410px;
+      top: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    display: inline-block;
+  }
+
+  .additional__wrapper {
+    padding: 0;
+    margin-bottom: 86px;
+  }
+
+  .additional__title {
+    padding-left: 0;
+    margin-bottom: 81px;
+    margin-top: 76px;
+
+    &::before {
+      width: 100%;
+      right: 936px;
+    }
+
+    &::after {
+      width: 100%;
+      left: 373px;
+    }
+  }
+
+  .additional__list {
+    display: inline-grid;
+    width: 896px;
+    margin: 0;
+  }
+}

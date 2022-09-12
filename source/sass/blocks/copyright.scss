@@ -14,3 +14,17 @@
   line-height: 18px;
   color: $long-text;
 }
+
+.copyright__logo {
+  fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding: 0;
+    width: auto;
+  }
+  .copyright__text {
+    margin-right: 22px;
+  }
+}
