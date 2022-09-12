@@ -72,39 +72,12 @@
   font-size: 24px;
   line-height: 26px;
   color: $main-font;
-  &--owner {
-    margin-top: 26px;
-    margin-bottom: 35px;
-  }
-  &--comment {
-    margin-top: 23px;
-    margin-bottom: 38px;
-  }
-  &--add {
-    margin-top: 23px;
-    margin-bottom: 34px;
-  }
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    top: 40px;
-    background-color: #68B738;
-  }
-  &--owner::after {
-    width: 100%;
-    top: 44px;
-    left: 62%;
-  }
-  &--comment::after {
-    width: 100%;
-    left: 50%;
-  }
-  &--add::after {
-    width: 100%;
-    left: 55%;
-  }
+  position: relative;
+  background-color: $main-bg;
+  padding-right: 14px;
+  width: 200px;
+
+
 }
 
 .form__radio {
@@ -131,6 +104,13 @@
   display: block;
   width: 100%;
   cursor: pointer;
+}
+
+.form__wrapper {
+  &--line {
+    border-bottom: 2px solid #68B738;
+    height: 44px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -195,36 +175,6 @@
     }
     &--add {
       margin: 65px 0 57px;
-    }
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      right: 808px;
-      top: 89px;
-      background-color: #68B738;
-    }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      top: 89px;
-      background-color: #68B738;
-    }
-    &--owner::after {
-      width: 100%;
-      top: 95px;
-      left: 700px;
-      overflow-x: hidden;
-    }
-    &--comment::after {
-      width: 478px;
-    }
-    &--add::after {
-      width: 446px;
     }
   }
 
@@ -304,39 +254,6 @@
 
   .form__title {
     padding: 0 110px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      right: 1370px;
-      top: 89px;
-      background-color: #68B738;
-    }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      top: 93px;
-      background-color: #68B738;
-    }
-    &--owner::after {
-      width: 100%;
-      top: 93px;
-      left: 652px;
-    }
-    &--comment::after {
-      width: 100%;
-      left: 320px;
-    }
-    &--add::after {
-      width: 100%;
-      top: 91px;
-      left: 350px;
-    }
   }
 
   .form__control {
