@@ -45,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .address__wrapper {
-    padding: 60px 70px 56px;
+    padding: 56px 70px;
     display: grid;
     grid-template-columns: 172px 160px;
     gap: 296px;
@@ -54,6 +54,7 @@
   .address__title {
     font-size: 20px;
     line-height: 26px;
+    height: 87px;
   }
 
   .address__text {
