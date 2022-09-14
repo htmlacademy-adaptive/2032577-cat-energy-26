@@ -1,9 +1,14 @@
 .gift__wrapper {
   padding: 58px 61px 43px 58px;
   background-image: url("../img/background/gift-cat.jpg");
+  background-size: 280px auto;
   text-align: center;
   box-sizing: border-box;
   line-height: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift-cat@2x.jpg")
+  }
 }
 
 .gift__icon {
@@ -29,11 +34,16 @@
     padding: 57px 124px 61px 77px;
     background-image: url("../img/background/gift-cat-tablet.jpg");
     text-align: center;
+    background-size: 707px auto;
     box-sizing: border-box;
     line-height: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-cat-tablet@2x.jpg");
+    }
   }
 
   .gift__icon {
@@ -57,12 +67,17 @@
 
   .gift__wrapper {
     padding: 56px 43px 42px 41px;
-    background-image: url("../img/background/gift-cat.jpg");
+    background-image: url("../img/background/gift-cat-desktop.jpg");
+    background-size: 245px auto;
     text-align: center;
     box-sizing: border-box;
     line-height: 0;
     display: inline-block;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-cat-desktop@2x.jpg")
+    }
   }
 
   .gift__icon {

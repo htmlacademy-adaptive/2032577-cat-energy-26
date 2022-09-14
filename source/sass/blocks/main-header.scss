@@ -27,7 +27,6 @@
   width: 34px;
   height: 38px;
   margin: 10px 0 17px;
-  background-image: url("../img/logo-mobile.svg");
   &--add {
     background-image: url("../img/logo-text.svg");
     width: 101px;
@@ -81,16 +80,21 @@
     display: inline-flex;
   }
 
+  .main-header__logo-image {
+    width: 174px;
+    height: 52px;
+  }
+
   .main-header__logo {
     width: 174px;
     height: 52px;
-    background-image: url("../img/logo-tablet.svg");
     margin: 24px 0 2px;
+    margin-left: 0;
     &--add {
       display: none;
     }
-    margin-left: 0;
   }
+
   .main-header__toogle {
     display: none;
   }
@@ -110,15 +114,16 @@
     margin: 0;
   }
 
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+
   .main-header__logo {
     width: 202px;
     height: 59px;
-    background-image: url("../img/logo-desktop.svg");
-    &--add {
-      display: none;
-    }
-    margin-left: 0;
   }
+
   .main-header__toogle {
     display: none;
   }

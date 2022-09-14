@@ -37,10 +37,12 @@
   display: block;
   width: auto;
   height: 362px;
-  background-image: url("../img/location.jpg");
   line-height: 0;
-  background-size: cover;
-  background-position: 50%;
+}
+
+.address__map-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,7 +71,6 @@
 
   .address__map {
     height: 400px;
-    background-image: url("../img/location-tablet.jpg");
   }
 }
 
@@ -92,6 +93,5 @@
 
   .address__map {
     height: 400px;
-    background-image: url("../img/location-desktop.jpg");
   }
 }
