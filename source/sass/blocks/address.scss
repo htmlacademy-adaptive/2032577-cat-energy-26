@@ -7,7 +7,7 @@
 }
 
 .address__wrapper {
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,11 +72,20 @@
   .address__map {
     height: 400px;
   }
+
+  .address__map-image {
+    height: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .address {
     position: relative;
+    background-color: $main-bg;
+
+    &--second-bg {
+      background-color: $secondary-bg;
+    }
   }
 
   .address__wrapper {
@@ -93,5 +102,9 @@
 
   .address__map {
     height: 400px;
+  }
+
+  .address__text {
+    text-align: left;
   }
 }

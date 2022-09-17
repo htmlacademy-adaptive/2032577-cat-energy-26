@@ -20,9 +20,35 @@
 .form__field {
   display: flex;
   align-items: center;
+  position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
+  }
+
+  &--cat-info .form__label {
+    margin-right: 16px;
+  }
+
+  &--email::after,
+  &--phone::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--email::after {
+    background-image: url("../img/email.svg");
+  }
+
+  &--phone::after {
+    background-image: url("../img/phone.svg");
   }
 }
 
@@ -57,13 +83,15 @@
   border: 1px solid #e7e7e7;
   flex-grow: 1;
   box-sizing: border-box;
+  position: relative;
 
   &--textarea {
     resize: none;
     display: block;
     width: 280px;
     padding-right: 12px;
-    margin-top: 38px;
+    margin-top: 44px;
+    height: 150px;
   }
 }
 
@@ -101,11 +129,45 @@
 }
 
 .form__radio {
+  margin: 0;
   margin-right: 15px;
+  appearance: none;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 7px solid $main-bg;
+    box-shadow: 0 0 0 1px #cdcdcd;
+    background-color: $main-bg;
+    box-sizing: border-box;
+  }
+
+  &:checked::before {
+    background-color: $content-bg;
+  }
 }
 
 .form__checkbox {
+  margin: 0;
   margin-right: 18px;
+  appearance: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    background-color: $main-bg;
+    box-sizing: border-box;
+  }
+  &:checked::before {
+    background-image: url("../img/tick-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .form__button-wrapper {
@@ -184,13 +246,17 @@
     }
     &--owner {
       padding: 0 70px;
+      margin-top: 85px;
     }
 
     &--line {
-      height: 99px;
-      &-comment,
+      height: 94px;
+      &-comment {
+        height: 85px;
+      }
+
       &-add {
-        height: 89px;
+        height: 88px;
       }
     }
 
@@ -212,7 +278,11 @@
       width: auto;
     }
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
+    }
+
+    &--add:nth-child(n) {
+      margin-bottom: 32px;
     }
   }
 
@@ -256,17 +326,18 @@
   }
 
   .form__button {
-    margin: 54px 0 72px;
+    margin: 24px 0 72px;
     width: 192px;
     padding: 13px 45px;
     box-sizing: content-box;
+    font-size: 20px;
   }
 
   .form__text {
     font-size: 16px;
     line-height: 16px;
     margin: 0;
-    margin-top: 69px;
+    margin-top: 38px;
   }
 
   .form__control {
@@ -277,6 +348,24 @@
       width: 631px;
       height: 174px;
       margin-top: 88px;
+    }
+  }
+
+  .form__radio {
+    &::before {
+      width: 40px;
+      height: 40px;
+      border: 10px solid $main-bg;
+    }
+  }
+
+  .form__checkbox {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+    &:checked::before {
+      background-image: url("../img/tick-tablet.svg");
     }
   }
 }
@@ -315,10 +404,10 @@
 
     &--add {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 221px);
       gap: 0 104px;
       padding: 0 110px;
-      margin: 68px auto 0;
+      margin: 72px auto 0;
       width: 1440px;
       box-sizing: border-box;
     }
@@ -326,6 +415,10 @@
     &--container {
       padding: 0;
       width: 1300px;
+    }
+
+    &--line {
+      height: 89px;
     }
   }
 
@@ -336,6 +429,10 @@
     &--comment,
     &--add {
       padding: 0 40px;
+    }
+
+    &--owner {
+      transform: translateY(68px);
     }
   }
 
@@ -360,14 +457,18 @@
     &--cat-info {
       width: 569px;
       &:not(:last-child) {
-        margin-bottom: 13px;
+        margin-bottom: 22px;
       }
     }
 
     &--programs {
       &:not(:last-child) {
-        margin-bottom: 13px;
+        margin-bottom: 15px;
       }
+    }
+
+    &--add {
+      align-items: flex-start;
     }
   }
 
@@ -384,9 +485,9 @@
   }
 
   .form__button {
-    margin: 61px 0 82px;
+    margin: 30px 0 82px;
     width: auto;
-    padding: 13px 188px;
+    padding: 15px 188px;
     box-sizing: content-box;
   }
 
@@ -394,6 +495,10 @@
     font-size: 16px;
     line-height: 16px;
     margin: 0;
-    margin-top: 69px;
+    margin-top: 47px;
+  }
+
+  .form__label--checkbox {
+    margin-top: 5px;
   }
 }

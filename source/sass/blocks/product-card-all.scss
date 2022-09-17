@@ -12,7 +12,7 @@
   text-transform: uppercase;
   color: #111111;
   display: block;
-  margin-top: 53px;
+  margin-top: 28px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .product-card-all {
-    padding: 81px 0 0;
+    padding: 69px 0 0;
     border-bottom: 1px solid #EBEBEB;
   }
 
@@ -71,4 +71,14 @@
     margin: 23px auto 87px;
   }
 
+}
+
+@media (min-width: $desktop-width) {
+  .product-card-all {
+    padding-top: 81px;
+  }
+
+  .product-card-all__wrapper {
+    padding: 52px 37px 38px 38px;
+  }
 }

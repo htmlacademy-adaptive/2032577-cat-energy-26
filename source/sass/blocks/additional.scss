@@ -1,10 +1,28 @@
 .additional__title {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $main-font;
+  position: relative;
+  background-color: $main-bg;
+  padding-right: 14px;
+  padding-left: 0;
+  box-sizing: content-box;
+  width: 232px;
+  margin: 0;
+  transform: translateY(24px);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 228px;
+    position: absolute;
+    height: 3px;
+    background-color: $main-bg;
+    top: 13px;
+    right: 240px;
+  }
 }
 
 .additional__list {
@@ -12,40 +30,43 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 43px;
+}
+
+.additional__wrapper-title {
+  &--line {
+    border-bottom: 2px solid #68B738;
+    height: 37px;
+    position: relative;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .additional__wrapper {
-    padding: 0 30px;
+.additional {
+  margin-top: 44px;
+}
+
+.additional__wrapper-title {
+  &--line {
+    height: 40px;
   }
+}
 
   .additional__title {
     font-size: 36px;
     line-height: 36px;
     position: relative;
     padding-left: 36px;
+    width: 339px;
+    transform: translateY(19px);
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #68b738;
-      right: 648px;
-      top: 24px;
+      display: none;
     }
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 10%;
-      height: 2px;
-      background-color: #68b738;
-      left: 410px;
-      top: 24px;
-    }
+  .additional__list {
+    margin-top: 92px;
   }
 }
 
@@ -59,10 +80,16 @@
     margin-bottom: 86px;
   }
 
+  .additional__wrapper-title {
+    &--container {
+      padding-left: 98px;
+    }
+  }
+
   .additional__title {
-    padding-left: 0;
+    padding-left: 40px;
     margin-bottom: 81px;
-    margin-top: 76px;
+    margin-top: 9px;
 
     &::before {
       width: 100%;
@@ -79,5 +106,7 @@
     display: inline-grid;
     width: 896px;
     margin: 0;
+    margin-left: 30px;
+    margin-top: 48px;
   }
 }

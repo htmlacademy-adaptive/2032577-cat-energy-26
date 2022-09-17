@@ -4,8 +4,8 @@
 }
 
 .main-footer__logo-image {
-  width: 128px;
-  height: 24px;
+  width: 130px;
+  height: 22px;
   margin: 39px 76px 32px;
 }
 
@@ -23,12 +23,8 @@
     padding: 58px 30px 55px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
-  }
-
-  .main-footer__address {
-    background-color: $secondary-bg;
   }
 
   .main-footer__logo {
@@ -39,12 +35,15 @@
 
   .main-footer__logo-image {
     margin: 0;
+    height: 30px;
   }
   .main-footer__social {
     margin: 0;
+    margin-left: 155px;
   }
   .main-footer__copyright {
     margin: 0;
+    margin-left: 129px;
     width: auto;
   }
 }
@@ -52,16 +51,18 @@
 @media (min-width: $desktop-width) {
   .main-footer__contacts-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 57px 110px 58px;
     width: $desktop-width;
     box-sizing: border-box;
   }
   .main-footer__logo-image {
     margin: 0;
+    height: 40px;
   }
   .main-footer__social {
-    margin: 0 413px 0 384px;
+    margin: 0 383px 0 413px;
+    align-self: center;
   }
   .main-footer__copyright {
     margin: 0;
