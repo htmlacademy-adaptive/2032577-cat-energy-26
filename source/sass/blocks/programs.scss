@@ -20,3 +20,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    margin-top: 82px;
+  }
+}

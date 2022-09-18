@@ -21,6 +21,11 @@
   display: inline-block;
   margin: 0;
   margin-left: 69px;
+  margin-top: 9px;
+
+  &--take-weight {
+    margin-top: 14px;
+  }
 
   &::before {
     content: "";
@@ -37,8 +42,8 @@
   }
 
   &--take-weight::before {
-    top: 24px;
-    left: 13px;
+    top: 29px;
+    left: 14px;
     width: 67px;
     height: 50px;
     background-image: url("../img/program-take-weight.svg");
@@ -53,7 +58,7 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
-  margin: 22px 0 15px;
+  margin: 29px 0 19px;
 }
 
 .program__link {
@@ -68,17 +73,17 @@
 }
 
 .program__link-text {
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
   .program {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     height: 372px;
     width: 708px;
-    padding: 77px 28px 53px 53px;
+    padding: 77px 28px 58px 53px;
     box-sizing: border-box;
     &:not(:last-child) {
       margin: 0 0 30px;
@@ -117,11 +122,15 @@
     border-bottom: none;
     box-sizing: border-box;
     max-width: 340px;
-    margin: 24px 0 48px;
+    margin: 15px 0 48px;
   }
   .program__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .program__link-text {
+    margin-right: 22px;
   }
 }
 
@@ -135,10 +144,12 @@
       margin: 0;
     }
   }
-  .program__title {
+
+ .program__title {
     font-size: 36px;
     line-height: 36px;
     margin-left: 162px;
+    margin-top: 0;
 
     &--lose-weight::before {
       top: 41px;
@@ -165,10 +176,15 @@
     line-height: 24px;
     border-bottom: none;
     box-sizing: border-box;
-    margin: 39px 0 23px;
+    margin: 61px 0 18px;
+    padding-bottom: 0;
   }
   .program__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .program__link-text {
+    margin-right: 26px;
   }
 }

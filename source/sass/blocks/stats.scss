@@ -1,12 +1,14 @@
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: 8px 8px 12px;
+  max-height: 44px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
-  gap: 2px 0;
+  gap: 6px 0;
+  align-items: flex-start;
 }
 
 .stats__item-title {
@@ -20,6 +22,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .stats {
+    grid-template-rows: auto auto auto;
+    grid-row: 3/4;
+  }
+
   .stats__item-title {
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 6px;

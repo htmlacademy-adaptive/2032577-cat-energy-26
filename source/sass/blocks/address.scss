@@ -7,7 +7,7 @@
 }
 
 .address__wrapper {
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,15 +37,17 @@
   display: block;
   width: auto;
   height: 362px;
-  background-image: url("../img/location.jpg");
   line-height: 0;
-  background-size: cover;
-  background-position: 50%;
+}
+
+.address__map-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
   .address__wrapper {
-    padding: 60px 70px 56px;
+    padding: 56px 70px;
     display: grid;
     grid-template-columns: 172px 160px;
     gap: 296px;
@@ -54,6 +56,7 @@
   .address__title {
     font-size: 20px;
     line-height: 26px;
+    height: 87px;
   }
 
   .address__text {
@@ -68,13 +71,21 @@
 
   .address__map {
     height: 400px;
-    background-image: url("../img/location-tablet.jpg");
+  }
+
+  .address__map-image {
+    height: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .address {
     position: relative;
+    background-color: $main-bg;
+
+    &--second-bg {
+      background-color: $secondary-bg;
+    }
   }
 
   .address__wrapper {
@@ -91,6 +102,9 @@
 
   .address__map {
     height: 400px;
-    background-image: url("../img/location-desktop.jpg");
+  }
+
+  .address__text {
+    text-align: left;
   }
 }

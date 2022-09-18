@@ -38,8 +38,36 @@
 }
 
 .instruction__description {
-  max-width: 199px;
   margin: 0;
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: $content-bg;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--icon-1::before {
+    background-image: url("../img/list-icon-leaves.svg");
+  }
+
+  &--icon-2::before {
+    background-image: url("../img/list-icon-boil.svg");
+  }
+
+  &--icon-3::before {
+    background-image: url("../img/list-icon-fork.svg");
+  }
+
+  &--icon-4::before {
+    background-image: url("../img/list-icon-clock.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,9 +80,10 @@
     margin: 32px 0 0;
     font-size: 16px;
     line-height: 24px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 249px 249px;
+    gap: 37px 135px;
+    width: 633px;
     counter-reset: list 0;
   }
   .instruction__item {
@@ -89,13 +118,28 @@
   .instruction__description {
     max-width: 100%;
     margin: 0;
+    display: block;
+
+    &::before {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
   }
+
 }
 
 
 @media (min-width: $desktop-width) {
   .instruction {
     margin-bottom: 0;
+  }
+
+  .instruction__list {
+    grid-template-columns: repeat(4, auto);
+    width: 1224px;
+    gap: 75px;
   }
 
   .instruction__title {

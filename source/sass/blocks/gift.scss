@@ -1,9 +1,18 @@
 .gift__wrapper {
   padding: 58px 61px 43px 58px;
   background-image: url("../img/background/gift-cat.jpg");
+  background-size: 280px auto;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   box-sizing: border-box;
   line-height: 0;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift-cat@2x.jpg")
+  }
 }
 
 .gift__icon {
@@ -11,13 +20,14 @@
 }
 
 .gift__description {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $main-bg;
+  max-width: 161px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,14 +36,21 @@
   }
 
   .gift__wrapper {
-    padding: 57px 124px 61px 77px;
+    padding: 57px 124px 61px 106px;
     background-image: url("../img/background/gift-cat-tablet.jpg");
     text-align: center;
+    background-size: 707px auto;
     box-sizing: border-box;
     line-height: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    width: 768px;
+    margin-top: 66px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-cat-tablet@2x.jpg");
+    }
   }
 
   .gift__icon {
@@ -47,22 +64,31 @@
   .gift__description {
     width: 161px;
     text-align: left;
+    margin: 0;
+    margin-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
     padding: 0;
+
   }
 
   .gift__wrapper {
     padding: 56px 43px 42px 41px;
-    background-image: url("../img/background/gift-cat.jpg");
+    background-image: url("../img/background/gift-cat-desktop.jpg");
+    background-size: 245px auto;
     text-align: center;
     box-sizing: border-box;
     line-height: 0;
     display: inline-block;
     align-items: center;
+    width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-cat-desktop@2x.jpg")
+    }
   }
 
   .gift__icon {
