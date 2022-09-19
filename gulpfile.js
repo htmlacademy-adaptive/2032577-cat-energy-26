@@ -20,8 +20,8 @@ export const styles = () => {
   .pipe(plumber())
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss([
-  autoprefixer(),
-  csso()
+    autoprefixer(),
+    csso()
   ]))
   .pipe(rename('style.min.css'))
   .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
@@ -62,7 +62,7 @@ const copyImages = () => {
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(squoosh({
-  webp: {}
+    webp: {}
   }))
   .pipe(gulp.dest('build/img'))
 }
@@ -78,7 +78,7 @@ const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
-  inlineSvg: true
+    inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
@@ -88,11 +88,11 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
-  'source/*.ico',
-  'source/*.webmanifest',
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*.webmanifest',
   ], {
-  base: 'source'
+    base: 'source'
   })
   .pipe(gulp.dest('build'))
   done();
@@ -108,12 +108,12 @@ const clean = () => {
 
 const server = (done) => {
   browser.init({
-  server: {
-  baseDir: 'build'
-  },
-  cors: true,
-  notify: false,
-  ui: false,
+    server: {
+      baseDir: 'build'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
   });
   done();
 }
@@ -131,7 +131,7 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
-  }
+}
 
 // Build
 
@@ -140,12 +140,12 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
 );
 
@@ -156,16 +156,17 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
   gulp.series(
-  server,
-  watcher
-));
+    server,
+    watcher
+  )
+);
 
 
