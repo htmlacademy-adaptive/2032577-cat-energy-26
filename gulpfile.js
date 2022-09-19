@@ -42,7 +42,7 @@ const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
-  }
+}
 
 // Images
 
