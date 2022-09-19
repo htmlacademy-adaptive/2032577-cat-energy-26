@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -142,6 +142,10 @@
         </div>
         <a class="address__map address__map--mobile" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/location.webp 1x, img/location@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x">
             <img alt="Мы на карте." src="img/location.jpg" class="address__map-image" srcset="img/location@2x.jpg 2x" width="320" height="362">
@@ -182,7 +186,7 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link container">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/sprite.svg#site-link"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
