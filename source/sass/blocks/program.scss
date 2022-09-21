@@ -1,11 +1,10 @@
 .program {
   max-width: 100%;
   background-color: $secondary-bg;
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   position: relative;
+
   &:not(:last-child) {
     margin: 0 0 20px;
   }
@@ -18,10 +17,10 @@
   line-height: 37px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  display: inline-block;
   margin: 0;
   margin-left: 69px;
   margin-top: 9px;
+  display: block;
 
   &--take-weight {
     margin-top: 14px;
@@ -65,11 +64,10 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   color: $main-font;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
 .program__link-text {
@@ -78,13 +76,12 @@
 
 @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
   .program {
-    flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
-    height: 372px;
+    height: auto;
     width: 708px;
     padding: 77px 28px 58px 53px;
     box-sizing: border-box;
+
     &:not(:last-child) {
       margin: 0 0 30px;
     }
@@ -94,6 +91,7 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
+    max-width: 350px;
 
     &--lose-weight::before {
       top: 81px;
@@ -115,6 +113,7 @@
       background-size: cover;
     }
   }
+
   .program__description {
     font-size: 16px;
     line-height: 24px;
@@ -124,6 +123,7 @@
     max-width: 340px;
     margin: 15px 0 48px;
   }
+
   .program__link {
     font-size: 20px;
     line-height: 30px;
@@ -137,15 +137,16 @@
 @media (min-width: $desktop-width) {
   .program {
     width: 570px;
-    height: 374px;
+    height: auto;
     padding: 77px 51px 55px 52px;
     box-sizing: border-box;
+
     &:not(:last-child) {
       margin: 0;
     }
   }
 
- .program__title {
+  .program__title {
     font-size: 36px;
     line-height: 36px;
     margin-left: 162px;
@@ -171,6 +172,7 @@
       background-size: cover;
     }
   }
+
   .program__description {
     font-size: 16px;
     line-height: 24px;
@@ -179,6 +181,7 @@
     margin: 61px 0 18px;
     padding-bottom: 0;
   }
+
   .program__link {
     font-size: 20px;
     line-height: 30px;

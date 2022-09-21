@@ -16,12 +16,12 @@
   &::before {
     content: "";
     display: block;
-    width: 228px;
+    width: 246px;
     position: absolute;
     height: 3px;
     background-color: $main-bg;
     top: 13px;
-    right: 240px;
+    right: 246px;
   }
 }
 
@@ -35,22 +35,22 @@
 
 .additional__wrapper-title {
   &--line {
-    border-bottom: 2px solid #68B738;
+    border-bottom: 2px solid #68b738;
     height: 37px;
     position: relative;
   }
 }
 
 @media (min-width: $tablet-width) {
-.additional {
-  margin-top: 44px;
-}
-
-.additional__wrapper-title {
-  &--line {
-    height: 40px;
+  .additional {
+    margin-top: 44px;
   }
-}
+
+  .additional__wrapper-title {
+    &--line {
+      height: 40px;
+    }
+  }
 
   .additional__title {
     font-size: 36px;

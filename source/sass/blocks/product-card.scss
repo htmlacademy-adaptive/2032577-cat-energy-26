@@ -5,7 +5,7 @@
 .product-card__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 69px 40px;
+  grid-template-rows: auto auto 40px;
   padding-bottom: 25px;
 }
 
@@ -18,14 +18,17 @@
   display: block;
   margin: 14px auto 0;
   align-items: center;
+
   &--big {
-    margin-top: 11px;
+    margin-top: 12px;
+    margin-bottom: 7px;
     width: 84px;
     height: 100px;
   }
 
   &--center {
-    margin-top: 28px;
+    margin-top: 24px;
+    margin-bottom: 17px;
   }
 }
 
@@ -70,8 +73,8 @@
       position: absolute;
       width: 324px;
       height: 430px;
-      left: 0px;
-      bottom: 0px;
+      left: 0;
+      bottom: 0;
       background-color: #f2f2f2;
       z-index: -1;
     }
@@ -101,7 +104,7 @@
     &--big {
       width: 168px;
       height: 200px;
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 

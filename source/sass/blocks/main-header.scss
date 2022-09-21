@@ -21,18 +21,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .main-header__logo {
   width: 34px;
   height: 38px;
   margin: 13px 0 14px;
+  background-repeat: no-repeat;
+
   &--add {
     background-image: url("../img/logo-text.svg");
     width: 112px;
     height: 22px;
   }
-  background-repeat: no-repeat;
 }
 
 .main-header__toogle {
@@ -46,19 +48,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
 
-.main-header__toogle:hover {
-  background-image: url("../img/toogle-close.svg");
-  transition: 0.2s;
-}
-
-.main-header__nav {
-  display: none;
-}
-
-.main-header__toogle:hover + .main-header__nav {
-  display: block;
+  &--jsoff {
+    opacity: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -90,6 +83,7 @@
     height: 52px;
     margin: 24px 0 2px;
     margin-left: 0;
+
     &--add {
       display: none;
     }
@@ -97,9 +91,6 @@
 
   .main-header__toogle {
     display: none;
-  }
-  .main-header__nav {
-    display: block;
   }
 }
 
@@ -128,8 +119,4 @@
   .main-header__toogle {
     display: none;
   }
-  .main-header__nav {
-    display: block;
-  }
 }
-

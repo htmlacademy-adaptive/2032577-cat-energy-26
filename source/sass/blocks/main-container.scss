@@ -18,6 +18,7 @@
   padding-top: 27px;
   padding-bottom: 40px;
   display: block;
+
   &--form {
     border-bottom: none;
     padding-bottom: 0;
@@ -62,18 +63,20 @@
   .main-container__wrapper {
     &--form {
       padding: 0 30px;
+    }
   }
-}
 
   .main-container__title {
     font-size: 60px;
     line-height: 60px;
     margin: 64px auto 82px;
+
     &--form {
       margin-bottom: 54px;
       padding: 0;
       margin-left: 40px;
     }
+
     &--catalog {
       margin-top: 36px;
       margin-bottom: 55px;
@@ -115,6 +118,7 @@
 
   .main-container__title {
     margin: 74px auto 84px;
+
     &--form {
       margin: 74px 0 56px;
     }

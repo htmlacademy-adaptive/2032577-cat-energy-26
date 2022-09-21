@@ -33,7 +33,7 @@
   text-align: center;
   background-image: url("../img/border-stat-small.svg");
   width: 124px;
-  height: 70px;
+  height: auto;
   background-repeat: no-repeat;
 }
 
@@ -49,7 +49,6 @@
 }
 
 .example__stat-description {
-  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -83,10 +82,10 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $main-bg;
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
     background-color: transparent;
     position: relative;
+
     &::after {
       content: "";
       display: block;
@@ -98,39 +97,46 @@
       z-index: -1;
     }
   }
+
   .example__wrapper {
     padding-bottom: 100px;
   }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-top: 43px;
   }
+
   .example__description {
     font-size: 16px;
     line-height: 24px;
     margin: 63px 0 54px;
     max-width: 700px;
   }
+
   .example__stats {
     display: inline-grid;
     grid-template-columns: 162px 162px auto;
     gap: 42px;
     margin: 0;
   }
+
   .example__stat-container {
     text-align: center;
     background-image: url("../img/border-stat-big.svg");
     width: 162px;
-    height: 77px;
+    height: auto;
     background-repeat: no-repeat;
   }
+
   .example__stat {
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 11px;
     margin-top: 15px;
   }
+
   .example__stat-description {
     font-size: 14px;
     line-height: 14px;
@@ -138,6 +144,7 @@
     text-align: center;
     margin: 0 auto;
   }
+
   .example__cost {
     font-size: 20px;
     line-height: 20px;
@@ -146,10 +153,12 @@
     grid-column: 3/4;
     text-align: right;
   }
+
   .example__stat-description-cost {
     margin-left: 0;
     margin-top: 9px;
   }
+
   .example__image {
     width: 560px;
     height: 512px;
@@ -169,7 +178,8 @@
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 129px 309px 152px;
+    grid-template-rows: repeat(3, auto);
+
     &::after {
       content: "";
       display: block;
@@ -210,7 +220,6 @@
   }
 
   .example__stat-description-cost {
-    margin-left: 0;
     margin-top: 0;
     margin-left: 63px;
   }

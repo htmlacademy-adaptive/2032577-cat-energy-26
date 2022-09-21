@@ -1,15 +1,23 @@
 .main-nav {
   background-color: $main-bg;
   width: 100%;
+
+  &--json {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 440px;
-    margin-right: 30px;
-    margin-top: 42px;
     display: inline-block;
-    margin: 42px 0 0 94px;
+    margin: 32px 0 0 94px;
+
+    &--json {
+      display: block;
+    }
   }
 }
 

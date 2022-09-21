@@ -17,7 +17,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-footer__contacts-container {
     width: $tablet-width;
     padding: 58px 30px 55px;
@@ -37,10 +36,12 @@
     margin: 3px 0;
     height: 24px;
   }
+
   .main-footer__social {
     margin: 0;
     margin-left: 155px;
   }
+
   .main-footer__copyright {
     margin: 0;
     margin-left: 129px;
@@ -56,16 +57,18 @@
     width: $desktop-width;
     box-sizing: border-box;
   }
+
   .main-footer__logo-image {
     margin: 8px 0;
     height: 24px;
   }
+
   .main-footer__social {
     margin: 0 383px 0 413px;
     align-self: center;
   }
+
   .main-footer__copyright {
     margin: 0;
   }
 }
-
