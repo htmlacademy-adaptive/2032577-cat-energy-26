@@ -5,14 +5,19 @@
   margin: 0 auto;
   border-bottom: 1px solid #d9d9d9;
   position: relative;
+
   &--cat-info {
     padding-bottom: 26px;
   }
+
   &--programs {
     padding-top: 22px;
     padding-bottom: 19px;
   }
-  &--owner, &--comment, &--add {
+
+  &--owner,
+  &--comment,
+  &--add {
     border-bottom: none;
   }
 }
@@ -125,13 +130,13 @@
   &--add::before {
     top: 14px;
   }
-
 }
 
 .form__radio {
   margin: 0;
   margin-right: 15px;
   appearance: none;
+
   &::before {
     content: "";
     display: block;
@@ -163,6 +168,7 @@
     background-color: $main-bg;
     box-sizing: border-box;
   }
+
   &:checked::before {
     background-image: url("../img/tick-mobile.svg");
     background-repeat: no-repeat;
@@ -190,14 +196,14 @@
 
 .form__wrapper {
   &--line {
-    border-bottom: 2px solid #68B738;
+    border-bottom: 2px solid #68b738;
     height: 48px;
     position: relative;
+  }
 
-    &-comment,
-    &-add {
-      height: 40px;
-    }
+  &--line-comment,
+  &--line-add {
+    height: 40px;
   }
 
   &--owner {
@@ -217,9 +223,11 @@
     display: block;
     width: 628px;
     box-sizing: border-box;
+
     &--cat-info {
       padding-bottom: 72px;
     }
+
     &--programs {
       padding: 25px 0 25px 28px;
       border: 1px solid #e7e7e7;
@@ -236,14 +244,15 @@
 
   .form__wrapper {
     &--add {
-    width: 631px;
-    gap: 0 61px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 69px auto 0;
-    box-sizing: content-box;
-    padding: 0 70px;
+      width: 631px;
+      gap: 0 61px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 69px auto 0;
+      box-sizing: content-box;
+      padding: 0 70px;
     }
+
     &--owner {
       padding: 0 70px;
       margin-top: 85px;
@@ -251,13 +260,14 @@
 
     &--line {
       height: 94px;
-      &-comment {
-        height: 85px;
-      }
+    }
 
-      &-add {
-        height: 88px;
-      }
+    &--line-comment {
+      height: 85px;
+    }
+
+    &--line-add {
+      height: 88px;
     }
 
     &--container {
@@ -274,9 +284,11 @@
     padding: 0;
     margin: 0;
     max-width: 628px;
+
     &--programs {
       width: auto;
     }
+
     &:not(:last-child) {
       margin-bottom: 12px;
     }
@@ -290,6 +302,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
+
     &--owner {
       margin: 0;
       width: auto;
@@ -297,6 +310,7 @@
       display: inline-block;
       padding: 0 42px 0 40px;
     }
+
     &--comment {
       margin: 0;
       width: auto;
@@ -304,6 +318,7 @@
       display: inline-block;
       padding: 0 42px 0 40px;
     }
+
     &--add {
       margin: 0;
       width: auto;
@@ -364,6 +379,7 @@
       width: 40px;
       height: 40px;
     }
+
     &:checked::before {
       background-image: url("../img/tick-tablet.svg");
     }
@@ -373,10 +389,12 @@
 @media (min-width: $desktop-width) {
   .form__fieldset {
     padding: 0;
+
     &--cat-info {
       padding-bottom: 0;
       width: 569px;
     }
+
     &--programs {
       padding: 25px 0 25px 28px;
       margin: 0;
@@ -451,11 +469,12 @@
 
   .form__field {
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     &--cat-info {
       width: 569px;
+
       &:not(:last-child) {
         margin-bottom: 22px;
       }
@@ -473,8 +492,6 @@
   }
 
   .form__button-wrapper {
-    width: auto;
-    padding: 00;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 81px;

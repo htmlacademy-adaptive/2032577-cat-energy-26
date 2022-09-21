@@ -1,6 +1,6 @@
 .product-card-all {
   padding: 6px 0 25px;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .product-card-all__title {
@@ -20,7 +20,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../img/plus.svg);
+    background-image: url("../img/plus.svg");
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto 23px;
@@ -52,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .product-card-all {
     padding: 69px 0 0;
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid #ebebeb;
   }
 
   .product-card-all__wrapper {
@@ -88,7 +88,6 @@
     max-width: 170px;
     margin: 23px auto 87px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

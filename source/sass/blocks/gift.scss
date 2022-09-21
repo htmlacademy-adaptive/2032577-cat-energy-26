@@ -11,7 +11,7 @@
   width: 280px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/gift-cat@2x.jpg")
+    background-image: url("../img/background/gift-cat@2x.jpg");
   }
 }
 
@@ -31,7 +31,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .gift__wrapper {
     padding: 57px 124px 61px 106px;
     background-image: url("../img/background/gift-cat-tablet.jpg");
@@ -69,7 +68,6 @@
 @media (min-width: $desktop-width) {
   .gift {
     padding: 0;
-
   }
 
   .gift__wrapper {
@@ -84,7 +82,7 @@
     width: 245px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background/gift-cat-desktop@2x.jpg")
+      background-image: url("../img/background/gift-cat-desktop@2x.jpg");
     }
   }
 

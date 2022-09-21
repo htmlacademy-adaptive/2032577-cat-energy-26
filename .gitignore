@@ -6,9 +6,9 @@
 *.pdf
 *.psd
 *.sublime*
-node-modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
-build/
+build
+node_modules
